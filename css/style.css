@@ -65,9 +65,10 @@ header .container {
     padding: 0 1.25rem;
 }
 
-header nav.container a {
-    display: inline-block;
+
+header nav.container>a {
     width: 50%;
+    display: inline-block;
     text-decoration: none;
     color: var(--maincolor);
 }
@@ -88,6 +89,8 @@ header nav .menu li {
 header nav .menu li a {
     padding: 0.625rem 0;
     display: inline-block;
+    text-decoration: none;
+    color: var(--maincolor);
 }
 
 
@@ -95,7 +98,39 @@ header nav .menu .active {
     font-weight: 500;
 }
 
-
-
-
 /* end of header  */
+
+
+
+
+
+
+/* mediaqueries */
+
+@media(width>=48rem) {
+    header nav.container #btn-menu {
+        display: none;
+    }
+
+    header nav.container>a {
+        order: 1;
+        text-align: right;
+        width: 20%;
+    }
+
+    header nav.container .menu {
+        width: 80%;
+        padding: 0;
+    }
+
+    header nav .menu li {
+        text-align: left;
+        display: inline-block;
+    }
+
+    header nav .menu li a {
+        padding: 0 calc(var(--space) * 1.25) 0 0;
+    }
+
+
+}
