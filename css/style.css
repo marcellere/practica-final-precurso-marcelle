@@ -108,6 +108,9 @@ header nav .menu .active {
 /* start of mediaqueries */
 
 @media(width>=48rem) {
+
+    /* start header */
+
     header nav.container #btn-menu {
         display: none;
     }
@@ -132,5 +135,12 @@ header nav .menu .active {
         padding: 0 calc(var(--space) * 1.25) 0 0;
     }
 
+    /* end of header */
 
+}
+
+@media(width>=87.5rem) {
+    header.container {
+        padding: 0;
+    }
 }
