@@ -1,2 +1,31 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Rasa:wght@300;500&display=swap');
+
+:root {
+    --font: 'Rasa', serif;
+    --maincolor: #414141;
+    --secondcolor: #C9C9C9;
+    --maxwidth: 87.5em;
+    --space: 1.25em;
+    --colorbutton: #eeeeee;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+container {
+    max-width: var(--maxwidth);
+}
