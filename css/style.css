@@ -113,10 +113,28 @@ footer .container {
 
 /* end of footer  */
 
-/* start of main  */
+/* start of hero  */
+
+section.hero {
+    background-image: url(../images/fondo.png);
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+/* end of hero  */
 
 
-/* end of main  */
+
 
 /* start of mediaqueries */
 
@@ -150,6 +168,14 @@ footer .container {
 
     /* end of header */
 
+    /* start of hero */
+
+    .hero h1 {
+        max-width: 43.75rem;
+    }
+
+    /* end of hero */
+
 }
 
 @media(width>=87.5rem) {
@@ -167,5 +193,5 @@ footer .container {
         padding: 0;
     }
 
-    /* end of header */
+    /* end of footer */
 }
