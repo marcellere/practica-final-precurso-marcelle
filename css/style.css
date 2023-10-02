@@ -100,10 +100,21 @@ header nav .menu .active {
 
 /* end of header  */
 
+footer p {
+    color: var(--secondcolor)
+}
+
+footer .container {
+    padding: 0 1.25rem;
+}
+
+/* start of footer  */
 
 
 
 
+
+/* end of footer  */
 
 /* start of mediaqueries */
 
@@ -140,7 +151,19 @@ header nav .menu .active {
 }
 
 @media(width>=87.5rem) {
-    header.container {
+
+    /* start of header */
+    header .container {
         padding: 0;
     }
+
+    /* end of header */
+
+    /* start of footer */
+
+    footer .container {
+        padding: 0;
+    }
+
+    /* end of header */
 }
