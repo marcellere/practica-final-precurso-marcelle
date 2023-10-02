@@ -40,6 +40,16 @@ body {
     font-size: 1rem;
 }
 
+main section {
+    padding: 3rem 1.25rem;
+}
+
+main section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2.5rem;
+}
+
 /* end of layout  */
 
 
@@ -133,6 +143,58 @@ section.hero {
 
 /* end of hero  */
 
+/* start of projects */
+
+#projects .grid {
+    display: grid;
+    gap: var(--space);
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: 1fr;
+}
+
+#projects .grid article:first-child {
+    background-image: url(../images/vase-wooden.jpg);
+    height: 50vh;
+}
+
+#projects .grid article:nth-child(2) {
+    background-image: url(../images/bottle-gradient-2.jpg);
+}
+
+#projects .grid article:last-child {
+    background-image: url(../images/coo-coo-clock.png);
+}
+
+#projects .grid article {
+    filter: grayscale(100%);
+    transition: 1s;
+    background-size: cover;
+    background-position: center center;
+}
+
+#projects .grid article:hover {
+    filter: grayscale(0%);
+}
+
+#projects .grid article {
+    display: flex;
+    align-items: flex-end;
+}
+
+#projects .grid article h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: 1s;
+    font-weight: 500;
+}
+
+#projects .grid article:hover h3 {
+    padding-left: 1rem;
+    opacity: 1;
+}
+
+/* end of projects */
 
 
 
@@ -175,6 +237,22 @@ section.hero {
     }
 
     /* end of hero */
+
+    /* start of projects */
+
+    #projects .grid {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #projects .grid article:last-child {
+        grid-column: 2;
+        grid-row: 1/3;
+    }
+
+    /* end of projects */
+
+
 
 }
 
